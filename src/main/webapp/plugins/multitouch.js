@@ -3,8 +3,19 @@
  */
 Draw.loadPlugin(function(ui)
 {
-	ui.editor.graph.click = function(me)
+	ui.editor.graph.addMouseListener(
 	{
-		console.log("clicked!");
-	};
+	  mouseDown: function(sender, evt)
+	  {
+	    console.log('mouseDown');
+	  },
+	  mouseMove: function(sender, evt)
+	  {
+	    console.log('mouseMove');
+	  },
+	  mouseUp: function(sender, evt)
+	  {
+	    console.log('mouseUp');
+	  }
+	});
 });
