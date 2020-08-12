@@ -10,4 +10,4 @@ Draw.loadPlugin(function(ui)
 			console.log("clicked!");
 		};
 	}
-}
+};
